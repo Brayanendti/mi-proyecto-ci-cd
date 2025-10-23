@@ -1,7 +1,7 @@
 name: Integración Continua
- on:
-    [push, pull_request]
- jobs:
+on:
+  [push, pull_request]
+  jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -17,4 +17,4 @@ name: Integración Continua
       run: npm ci
       
     - name: Ejecutar pruebas
-      run: npm test--silent
+      run: npm test --silent
